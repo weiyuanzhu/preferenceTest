@@ -1,0 +1,36 @@
+<resources>
+
+    <string name="app_name">PreferenceTest</string>
+    <string name="pref_panellist">panellisttest</string>
+	<string name="pref_syncConnectionTypes_default">195</string>
+    <string-array name="pref_panellsit_entries">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+    </string-array>
+     <string-array name="pref_panellist_values">
+        <item>192</item>
+        <item>193</item>
+        <item>194</item>
+        <item>195</item>
+    </string-array>
+    
+    <string-array name="pref_syncConnectionTypes_entries">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+    </string-array>
+     
+     <string-array name="pref_syncConnectionTypes_values">
+        <item>192</item>
+        <item>193</item>
+        <item>194</item>
+        <item>195</item>
+    </string-array>
+     
+     
+     
+    
+</resources>

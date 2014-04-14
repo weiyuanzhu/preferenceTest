@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+	<PreferenceCategory 
+	    android:title="Panels"
+	    android:key="pref_panels">  
+	    
+	<MultiSelectListPreference
+	    
+        android:key="pref_multi_select_panelList"
+        android:title="@string/pref_panellist"
+        android:dialogTitle="Test"
+        android:entries="@array/pref_panellsit_entries"
+        android:entryValues="@array/pref_panellist_values"
+	/>			    
+	    
+	    
+    <ListPreference 
+        android:key="pref_panelList"
+        android:title="@string/pref_panellist"
+        android:dialogTitle="Test"
+        android:entries="@array/pref_panellsit_entries"
+        android:entryValues="@array/pref_panellist_values"
+        />
+    <CheckBoxPreference
+        android:key="pref_sync"
+        android:title="pref_sync"
+        android:summary="pref_sync_summ"
+        android:defaultValue="true" />
+    <ListPreference
+        android:dependency="pref_sync"
+        android:key="pref_syncConnectionType"
+        android:title="pref_syncConnectionType"
+        android:dialogTitle="pref_syncConnectionType"
+        android:entries="@array/pref_syncConnectionTypes_entries"
+        android:entryValues="@array/pref_syncConnectionTypes_values"
+        android:defaultValue="@string/pref_syncConnectionTypes_default" />
+	 </PreferenceCategory>    
+	
+	<PreferenceCategory
+	    android:title="Website"
+	    android:key="pref_website">
+			<Preference android:title="prefs_web_page" >
+		    <intent
+		        android:action="android.intent.action.VIEW"
+		        android:data="http://www.example.com" />
+			</Preference>
+	</PreferenceCategory>
+</PreferenceScreen>
